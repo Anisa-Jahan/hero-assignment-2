@@ -24,7 +24,7 @@ section{
     border-radius: 20px;
 }
 
-/*blog-area design*/
+/*blog-area design - left side*/
 .blog-button{
     border: 2px solid black;
     border-radius: 10px;
@@ -46,3 +46,31 @@ section{
     background-color: brown;
     color: white;
 }
+
+/*blog-area design - right side*/
+.blog-area{
+    display: flex;
+    margin-left: 20px;
+}
+.blog-details{
+    border: 2px solid black;
+    grid-template-rows: repeat(3 1fr);
+    grid-template-columns: repeat(3 1fr);
+    height: 75%;
+    width: 75%;
+    gap: 3px
+}
+
+/*footer design*/
+footer{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+.footer-link{
+    text-decoration: none;
+    justify-content: space-between;
+}
+
