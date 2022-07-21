@@ -5,6 +5,17 @@ body{
 section{
     margin-bottom: 100px;
 }
+@media screen and(max-width:576px) {
+    .blog-details{
+        grid-template-columns: repeat(1 1fr);
+    }
+}
+@media  screen and(min-width:577px) and(max-width:768px) {
+    .blog-details{
+        grid-template-columns: repeat(2 1fr);
+    }
+    
+}
 /*top banner design*/
 .banner-heading a{
     border: 2px solid red;
@@ -12,8 +23,7 @@ section{
     text-decoration: none;
     padding: 5px;
     color: white;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
 }
 
 .top-banner{
@@ -29,7 +39,7 @@ section{
     border: 2px solid black;
     border-radius: 10px;
     height: 25%;
-    width: 25%;
+    width: 15%;
     background-color: black;
     padding: 20px;
 }
@@ -41,6 +51,7 @@ section{
     border-radius: 10px;
     display: block;
     
+    
 }
 #btn{
     background-color: brown;
@@ -51,15 +62,22 @@ section{
 .blog-area{
     display: flex;
     margin-left: 20px;
+    
 }
 .blog-details{
-    border: 2px solid black;
+    border: 2px solid white;
+    display: grid;
     grid-template-rows: repeat(3 1fr);
     grid-template-columns: repeat(3 1fr);
-    height: 75%;
-    width: 75%;
-    gap: 3px
-}
+    height: 85%;
+    width: 85%;
+    gap: 3px;
+    }
+.blogs{
+        border: 1px solid white;
+        padding: 2px;
+        
+    }
 
 /*footer design*/
 footer{
@@ -85,4 +103,7 @@ footer{
 /* upcomming page img design */
 .img-flex{
     display: flex;
+}
+.img-flex img{
+    padding: 3px;
 }
